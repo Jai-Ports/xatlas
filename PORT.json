@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "name": "xatlas",
+  "description": "Jai translation of the xatlas UV atlas generation library",
+  "upstream": {
+    "url": "https://github.com/jpcy/xatlas.git",
+    "commit": "f700c7790aaa030e794b52ba7791a05c085faf0c"
+  },
+  "generator": {
+    "repository": "https://github.com/Jai-Ports/generator.git",
+    "commit": "a09238d9e97756b286a8a9bdcdcad27b96dbba29"
+  },
+  "language": "c++",
+  "standard": "c++14",
+  "supported_target": "linux-x64",
+  "sources": [
+    "source/xatlas/xatlas.cpp"
+  ],
+  "include_directories": [
+    "source/xatlas"
+  ],
+  "defines": [
+    "XA_MULTITHREADED=0"
+  ],
+  "compiler_flags": [
+    "-fno-exceptions",
+    "-fno-rtti",
+    "-fwrapv",
+    "-ffp-contract=off"
+  ]
+}
